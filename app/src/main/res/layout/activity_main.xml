@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+    tools:context=".MainActivity"
+    android:weightSum="9"
+    android:orientation="vertical"
+    android:gravity="bottom|center_horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <HorizontalScrollView
+    android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/horizontal_scrollView_txtExpression"
+        android:scrollbars="none">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/txtExpression"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:layout_gravity="end"
+        android:textSize="@dimen/textView_text_big"
+        android:textAlignment="viewEnd"
+        android:textColor="?attr/colorOnPrimary"/>
+
+</HorizontalScrollView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/txtJavab"
+        android:singleLine="true"
+        android:layout_gravity="end"
+        android:textSize="@dimen/textView_text_small"
+        android:textAlignment="viewEnd"/>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/gray_light"/>
+
+
+    <TableLayout
+        android:weightSum="5"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="5.25"
+        android:layout_marginTop="16dp">
+
+
+    <TableRow
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnAC"
+        android:textSize="@dimen/button_text_size_small"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="AC"/>
+
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnParantezBaz"
+        android:textSize="@dimen/button_text_size_small"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="("/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnParantezBaste"
+        android:textSize="@dimen/button_text_size_small"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text=")"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnTaghsim"
+        android:textSize="@dimen/button_text_size_big"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="/"/>
+
+</TableRow>
+
+
+    <TableRow
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn7"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="7"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn8"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="8"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn9"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="9"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnZarb"
+        android:textSize="@dimen/button_text_size_big"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="*"/>
+
+
+</TableRow>
+
+
+    <TableRow
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn4"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="4"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn5"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="5"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn6"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="6"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnMenha"
+        android:textSize="@dimen/button_text_size_big"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="-"/>
+
+</TableRow>
+
+
+   <TableRow
+       android:weightSum="4"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:layout_weight="1">
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn1"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="1"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn2"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="2"
+        android:layoutDirection="rtl"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn3"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="3"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnJam"
+        android:textSize="@dimen/button_text_size_big"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="+"/>
+
+</TableRow>
+
+
+    <TableRow
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnPakidan"
+        android:textSize="@dimen/button_text_size_big"
+        android:textColor="?attr/colorSecondary"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text=">"
+        android:layoutDirection="rtl"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btn0"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="0"/>
+
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:id="@+id/btnDot"
+        android:textSize="@dimen/button_text_size_big"
+        android:background="?selectableItemBackground"
+        android:layout_weight="1"
+        android:text="."/>
+
+
+   <FrameLayout
+        android:layout_height="match_parent"
+       android:layout_width="0dp"
+       android:layout_weight="1">
+
+    <TextView
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/btnMosavi"
+        android:layout_gravity="center"
+        android:textSize="@dimen/button_text_size_big"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_circle"
+        android:layout_marginTop="5dp"
+        android:text="="/>
+
+</FrameLayout>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>
